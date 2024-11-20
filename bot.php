@@ -1749,7 +1749,8 @@ if(preg_match('/havePaiedWeSwap(.*)/',$data,$match)) {
 🔋حجم سرویس: $volume گیگ
 ⏰ مدت سرویس: $days روز⁮⁮ ⁮⁮
 " . ($botState['configLinkState'] != "off" && $serverType != "marzban"?"
-💝 config : <code>$link</code>":"");
+لینک اتصال:
+<code>$link</code>":"");
 
 if($botState['subLinkState'] == "on") $acc_text .= "
 
@@ -2995,7 +2996,9 @@ if(preg_match('/payCustomWithWallet(.*)/',$data, $match)){
 🔋حجم سرویس: $volume گیگ
 ⏰ مدت سرویس: $days روز⁮⁮ ⁮⁮
 " . ($botState['configLinkState'] != "off" && $serverType != "marzban"?"
-💝 config : <code>$link</code>":"");
+لینک اتصال:
+<code>$link</code>":"");
+	    
 if($botState['subLinkState'] == "on") $acc_text .= "
 
 🔋 Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
@@ -3401,14 +3404,17 @@ if(preg_match('/accCustom(.*)/',$data, $match) and $text != $buttonValues['cance
 📡 پروتکل: $protocol
 🔮 نام سرویس: $remark
 🔋حجم سرویس: $volume گیگ
-⏰ مدت سرویس: $days روز⁮⁮ ⁮⁮
+⏰ مدت سرویس: $days روز⁮⁮ 
 " . ($botState['configLinkState'] != "off" && $serverType != "marzban"?"
-💝 config : <code>$vray_link</code>":"");
+لینک اتصال:
+<code>$vray_link</code>":"");
+
 if($botState['subLinkState'] == "on") $acc_text .= "
 
 🔋 Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
 
-\n🌐 subscription : <code>$subLink</code>";
+
+🌐 subscription : <code>$subLink</code>";
     
         $file = RandomString() .".png";
         $ecc = 'L';
@@ -3721,12 +3727,14 @@ if(preg_match('/payWithWallet(.*)/',$data, $match)){
 🔋حجم سرویس: $volume گیگ
 ⏰ مدت سرویس: $days روز⁮⁮ ⁮⁮
 " . ($botState['configLinkState'] != "off" && $serverType != "marzban"?"
-💝 config : <code>$link</code>":"");
+لینک اتصال:
+<code>$link</code>":"");
 if($botState['subLinkState'] == "on") $acc_text .= "
 
 🔋 Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
 
-\n🌐 subscription : <code>$subLink</code>";
+
+🌐 subscription : <code>$subLink</code>";
             
                 $file = RandomString() .".png";
                 $ecc = 'L';
@@ -4252,12 +4260,14 @@ if(preg_match('/accept(.*)/',$data, $match) and $text != $buttonValues['cancel']
 🔋حجم سرویس: $volume گیگ
 ⏰ مدت سرویس: $days روز
 " . ($botState['configLinkState'] != "off" && $serverType != "marzban"?"
-💝 config : <code>$link</code>":"");
+لینک اتصال:
+<code>$link</code>":"");
 if($botState['subLinkState'] == "on") $acc_text .= "
 
 🔋 Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
 
-\n🌐 subscription : <code>$subLink</code>";
+
+🌐 subscription : <code>$subLink</code>";
             
                 $file = RandomString() .".png";
                 $ecc = 'L';
@@ -5718,12 +5728,15 @@ if(preg_match('/freeTrial(\d+)_(?<buyType>\w+)/',$data,$match)) {
 🔋حجم سرویس: $volume گیگ
 ⏰ مدت سرویس: $days روز
 " . ($botState['configLinkState'] != "off" && $serverType != "marzban"?"
-💝 config : <code>$link</code>":"");
+لینک اتصال:
+<code>$link</code>":"");
+	    
 if($botState['subLinkState'] == "on") $acc_text .= "
 
 🔋 Volume web: <code> $botUrl"."search.php?id=".$uniqid."</code>
 
-\n🌐 subscription : <code>$subLink</code>";
+
+🌐 subscription : <code>$subLink</code>";
     
         $file = RandomString().".png";
         $ecc = 'L'; 
